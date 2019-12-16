@@ -13,6 +13,8 @@ set novisualbell
 set t_vb=
 set tm=500
 set autoindent
+set splitbelow
+set termwinsize=10x0
 
 vnoremap <silent> * :<C-U>
   \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
@@ -112,6 +114,10 @@ set foldmethod=indent
 set foldnestmax=10
 set foldlevel=2
 
+" Opens a terminal window inside Vim
+autocmd vimenter * term
+
+" Opens NERDTree inside Vim
 " Use C-w-w to switch between NERDTree and open file
 autocmd vimenter * NERDTree
 
@@ -133,3 +139,4 @@ vno <down> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
+
