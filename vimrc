@@ -1,4 +1,4 @@
-set shell=sh
+set shell=bash
 syntax on
 set nu
 set relativenumber
