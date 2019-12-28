@@ -114,15 +114,7 @@ set foldmethod=indent
 set foldnestmax=10
 set foldlevel=2
 
-" Opens a terminal window inside Vim
-autocmd vimenter * term
-
-" Opens NERDTree inside Vim
-" Use C-w-w to switch between NERDTree and open file
-autocmd vimenter * NERDTree
-
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Disable arrow keys
 no <down> <Nop>
@@ -139,4 +131,3 @@ vno <down> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
-
