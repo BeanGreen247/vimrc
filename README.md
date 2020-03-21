@@ -10,5 +10,5 @@ vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
 ```
 How to apply
 ```
-wget -O ~/.vimrc https://raw.githubusercontent.com/BeanGreen247/vimrc/master/vimrc
+wget -O ~/.vimrc https://raw.githubusercontent.com/BeanGreen247/dotfiles/master/vim/vimrc
 ```
